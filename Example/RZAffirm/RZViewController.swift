@@ -23,9 +23,8 @@ class RZViewController: UIViewController {
         assertNotNil(x)
         
         let rzViewControllerSubclass = RZViewControllerSubclass()
-//        if ( rzViewControllerSubclass ) {
-//            NSLog(@"Calling assertImplementedBySubclass on an instance of RZViewController raises an exception.");
-//        }
+        assertSubclass(rzViewControllerSubclass)
+        
     }
     
     // MARK: RZAFFIRM_TRUE
@@ -43,6 +42,10 @@ class RZViewController: UIViewController {
     
     func assertNil() {
         RZAFFIRM_NIL(nil);
+    }
+    
+    func assertSubclass(object: AnyObject) {
+        RZAFFIRM_KINDOF(object, self.classForCoder)
     }
     
     // MARK: RZASSERT_NOT_NIL
@@ -74,7 +77,7 @@ class RZViewController: UIViewController {
     }
     
     @IBAction func throwRZAffirmNonSubclassesMustOverride(sender: AnyObject) {
-        
+        RZAFFIRM_SUBCLASSES_MUST_OVERRIDE(self)
     }
     
     @IBAction func throwRZAffirmShouldNeverGetHere(sender: AnyObject) {

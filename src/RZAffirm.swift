@@ -81,16 +81,6 @@ public func RZAFFIRM_FALSE(condition: @autoclosure () -> Bool, file: StaticStrin
     assert((condition() == false), "**** Unexpected Assertion ****", file: file, line: line)
 }
 
-/**
-*  Raise an exception. Return void.
-*
-*  @param message     A printf-style format string that describes the failure condition.
-*/
-
-public func RZAFFIRM_WITH_MESSAGE(message: String, file: StaticString = __FILE__, line: UWord = __LINE__, variadicArgs:AnyObject...) -> Void {
-    assert(false, "**** Unexpected Assertion **** \(variadicArgs)", file: file, line: line)
-}
-
 
 // String Assertions
 
@@ -127,7 +117,7 @@ public func RZAFFIRM_NONEMPTY_STRING(string: String?, file: StaticString = __FIL
 *  @param testClass     A class.
 */
 
-public func RZAFFIRM_KINDOF(object: AnyObject, testClass:AnyClass, file: StaticString = __FILE__, line: UWord = __LINE__) -> Void {
+public func RZAFFIRM_KINDOF(object: AnyObject, testClass: AnyClass, file: StaticString = __FILE__, line: UWord = __LINE__) -> Void {
     assert((object.isKindOfClass(testClass)), "**** Object of Unexpected Class **** \nReason: Expected class: \(testClass) but got: \(object) of class \(object.self)", file: file, line: line)
 }
 
@@ -139,7 +129,7 @@ public func RZAFFIRM_KINDOF(object: AnyObject, testClass:AnyClass, file: StaticS
 *  @param y     A class.
 */
 
-public func RZAFFIRM_KINDOF_OR_NIL(object: AnyObject?, testClass:AnyClass, file: StaticString = __FILE__, line: UWord = __LINE__) -> Void {
+public func RZAFFIRM_KINDOF_OR_NIL(object: AnyObject?, testClass: AnyClass, file: StaticString = __FILE__, line: UWord = __LINE__) -> Void {
     if ( object != nil ) {
         assert((object!.isKindOfClass(testClass)), "**** Object of Unexpected Class and Not Nil **** \nReason: Expected class: \(testClass) or nil but got: \(object) of class \(object.self)", file: file, line: line)
     } else {
@@ -170,8 +160,8 @@ public func RZAFFIRM_CLASS_SUBCLASS_OF_CLASS(subclass: AnyClass, parentClass: An
 * otherwise be left empty
 */
 
-public func RZAFFIRM_SUBCLASSES_MUST_OVERRIDE(object: AnyObject!, file: StaticString = __FILE__, line: UWord = __LINE__) -> Void {
-    assert(false, "**** Subclass Responsibility Assertion **** \nReason: Subclasses of \(object.self) MUST override this method: \(__FUNCTION__)\n", file: file, line: line)
+public func RZAFFIRM_SUBCLASSES_MUST_OVERRIDE(object: AnyObject!, file: StaticString = __FILE__, line: UWord = __LINE__, function: StaticString = __FUNCTION__) -> Void {
+    assert(false, "**** Subclass Responsibility Assertion **** \nReason: Subclasses of \(object.self) MUST override this method: \(function)\n", file: file, line: line)
 }
 
 
