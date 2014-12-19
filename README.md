@@ -9,7 +9,7 @@ RZAffirm
 
 You define a method on a class, but you want that method to ONLY be called by subclasses. Use `RZAFFIRM_SUBCLASSES_MUST_OVERRIDE` to throw an exception if the method is called from the class itself:
 
-```
+```objc
 class RZSuperclass
 
 func aMethodThatShouldBeCalledFromSubclassesOnly -> Void {
@@ -18,7 +18,8 @@ func aMethodThatShouldBeCalledFromSubclassesOnly -> Void {
 ```
 
 You define a switch statement with a case that should never occur. Use `RZAFFIRM_SHOULD_NEVER_GET_HERE` to throw an exception if your program passes the undesired case to the switch statement:
-```
+
+```objc
 enum AwesomeMode {
     case AwesomeModeNotSet
     case AwesomeModeIsAwesome
