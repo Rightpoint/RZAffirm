@@ -13,8 +13,8 @@
 		1CAA986B1A44AEAC00779DDC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CAA986A1A44AEAC00779DDC /* Images.xcassets */; };
 		1CAA986E1A44AEAC00779DDC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CAA986C1A44AEAC00779DDC /* LaunchScreen.xib */; };
 		1CAA987A1A44AEAC00779DDC /* RZAffirmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAA98791A44AEAC00779DDC /* RZAffirmTests.swift */; };
-		1CAA98841A44B05E00779DDC /* RZAffirm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAA98831A44B05E00779DDC /* RZAffirm.swift */; };
 		1CAA98861A44B4C600779DDC /* RZViewControllerSubclass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAA98851A44B4C600779DDC /* RZViewControllerSubclass.swift */; };
+		1CAA98881A44C63200779DDC /* RZAffirm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAA98871A44C63200779DDC /* RZAffirm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +38,8 @@
 		1CAA98731A44AEAC00779DDC /* RZAffirmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RZAffirmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CAA98781A44AEAC00779DDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1CAA98791A44AEAC00779DDC /* RZAffirmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZAffirmTests.swift; sourceTree = "<group>"; };
-		1CAA98831A44B05E00779DDC /* RZAffirm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RZAffirm.swift; sourceTree = "<group>"; };
 		1CAA98851A44B4C600779DDC /* RZViewControllerSubclass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RZViewControllerSubclass.swift; sourceTree = "<group>"; };
+		1CAA98871A44C63200779DDC /* RZAffirm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RZAffirm.swift; path = ../../src/RZAffirm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +81,7 @@
 		1CAA98601A44AEAC00779DDC /* RZAffirm */ = {
 			isa = PBXGroup;
 			children = (
-				1CAA98831A44B05E00779DDC /* RZAffirm.swift */,
+				1CAA98871A44C63200779DDC /* RZAffirm.swift */,
 				1CAA98631A44AEAC00779DDC /* RZAppDelegate.swift */,
 				1CAA98651A44AEAC00779DDC /* RZViewController.swift */,
 				1CAA98851A44B4C600779DDC /* RZViewControllerSubclass.swift */,
@@ -219,8 +219,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CAA98861A44B4C600779DDC /* RZViewControllerSubclass.swift in Sources */,
-				1CAA98841A44B05E00779DDC /* RZAffirm.swift in Sources */,
 				1CAA98661A44AEAC00779DDC /* RZViewController.swift in Sources */,
+				1CAA98881A44C63200779DDC /* RZAffirm.swift in Sources */,
 				1CAA98641A44AEAC00779DDC /* RZAppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

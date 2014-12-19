@@ -1,9 +1,29 @@
 //
-//  RZAssert.swift
-//  Consonance
+//  RZAffirm.swift
+//  RZAffirm.swift
 //
 //  Created by Matthew Buckley on 12/13/14.
 //  Copyright (c) 2014 MattBuckley. All rights reserved.
+//  http://raizlabs.com/
+//
+//  Permission is hereby granted, free of charge, to any person obtaining
+//  a copy of this software and associated documentation files (the
+//  "Software"), to deal in the Software without restriction, including
+//  without limitation the rights to use, copy, modify, merge, publish,
+//  distribute, sublicense, and/or sell copies of the Software, and to
+//  permit persons to whom the Software is furnished to do so, subject to
+//  the following conditions:
+//
+//  The above copyright notice and this permission notice shall be
+//  included in all copies or substantial portions of the Software.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+//  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+//  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+//  NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+//  LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+//  OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+//  WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
 
 import Foundation
@@ -16,9 +36,9 @@ import Foundation
 *  @param object     An object instance to compare with nil.
 */
 
-public func RZASSERT_NIL(object:AnyObject?) -> Void
+public func RZAFFIRM_NIL(object:AnyObject?) -> Void
 {
-    assert((object == nil), "**** Unexpected Nil Assertion **** \nExpected nil, but \(object) is not nil \nSelf: self")
+    assert((object == nil), "**** Unexpected Nil Assertion **** \nExpected nil, but \(object) is not nil")
 }
 
 
@@ -28,18 +48,18 @@ public func RZASSERT_NIL(object:AnyObject?) -> Void
 *  @param object     An object instance to compare with nil.
 */
 
-public func RZASSERT_NOT_NIL(object:AnyObject?) -> Void
+public func RZAFFIRM_NOT_NIL(object:AnyObject?) -> Void
 {
-    assert((object != nil), "**** Unexpected Non-Nil Assertion **** \nExpected not nil, but \(object) is nil \nSelf: self")
+    assert((object != nil), "**** Unexpected Non-Nil Assertion **** \nExpected not nil, but \(object) is nil")
 }
 
 /**
 *  Raise an exception. Return void.
 */
 
-public func RZASSERT_ALWAYS() -> Void
+public func RZAFFIRM_ALWAYS() -> Void
 {
-    assert(false, "**** Unexpected Assertion **** \nSelf: self")
+    assert(false, "**** Unexpected Assertion ****")
 }
 
 
@@ -49,9 +69,9 @@ public func RZASSERT_ALWAYS() -> Void
 *  @param object     An object instance to compare with 0.
 */
 
-public func RZASSERT_TRUE(condition: @autoclosure () -> Bool) -> Void
+public func RZAFFIRM_TRUE(condition: @autoclosure () -> Bool) -> Void
 {
-    assert((condition() == true), "**** Unexpected Assertion **** \nSelf: self")
+    assert((condition() == true), "**** Unexpected Assertion ****")
 }
 
 
@@ -61,9 +81,9 @@ public func RZASSERT_TRUE(condition: @autoclosure () -> Bool) -> Void
 *  @param object     An object instance to compare with 1.
 */
 
-public func RZASSERT_FALSE(condition: @autoclosure () -> Bool) -> Void
+public func RZAFFIRM_FALSE(condition: @autoclosure () -> Bool) -> Void
 {
-    assert((condition() == false), "**** Unexpected Assertion **** \nSelf: self")
+    assert((condition() == false), "**** Unexpected Assertion ****")
 }
 
 /**
@@ -72,14 +92,14 @@ public func RZASSERT_FALSE(condition: @autoclosure () -> Bool) -> Void
 *  @param message     A printf-style format string that describes the failure condition.
 */
 
-public func RZASSERT_WITH_MESSAGE(message:String, variadicArgs:AnyObject...) -> Void
+public func RZAFFIRM_WITH_MESSAGE(message:String, variadicArgs:AnyObject...) -> Void
 {
-    assert(false, "**** Unexpected Assertion **** \(variadicArgs) \nSelf: self")
+    assert(false, "**** Unexpected Assertion **** \(variadicArgs)")
 }
 
-public func RZASSERT_TRUE_WITH_MESSAGE(condition: @autoclosure () -> Bool, message:String, variadicArgs:AnyObject...) -> Void
+public func RZAFFIRM_TRUE_WITH_MESSAGE(condition: @autoclosure () -> Bool, message:String, variadicArgs:AnyObject...) -> Void
 {
-    assert((condition() == true), "**** Unexpected Assertion **** \(message) \nSelf: self")
+    assert((condition() == true), "**** Unexpected Assertion **** \(message)")
 }
 
 // String Assertions
@@ -92,7 +112,7 @@ public func RZASSERT_TRUE_WITH_MESSAGE(condition: @autoclosure () -> Bool, messa
 *  @param y     An NSString instance.
 */
 
-public func RZASSERT_EQUAL_STRINGS(firstString:String, secondString:String) -> Void
+public func RZAFFIRM_EQUAL_STRINGS(firstString:String, secondString:String) -> Void
 {
     assert((firstString == secondString), "**** Strings Unexpectedly Unequal **** \nLeft: \(firstString)\nRight: \(secondString)")
 }
@@ -103,9 +123,9 @@ public func RZASSERT_EQUAL_STRINGS(firstString:String, secondString:String) -> V
 *  @param string An NSString instance.
 */
 
-public func RZASSERT_NONEMPTY_STRING(string:String?) -> Void
+public func RZAFFIRM_NONEMPTY_STRING(string:String?) -> Void
 {
-    assert((string != nil), "**** Unexpected Nil, Wrong Class, or Empty String **** \nReason: Expected non-empty string but got: \(string) \nSelf: self")
+    assert((string != nil), "**** Unexpected Nil, Wrong Class, or Empty String **** \nReason: Expected non-empty string but got: \(string)")
 }
 
 
@@ -119,7 +139,7 @@ public func RZASSERT_NONEMPTY_STRING(string:String?) -> Void
 *  @param testClass     A class.
 */
 
-public func RZASSERT_KINDOF(object:AnyObject, testClass:AnyClass) -> Void
+public func RZAFFIRM_KINDOF(object:AnyObject, testClass:AnyClass) -> Void
 {
     assert((object.isKindOfClass(testClass)), "**** Object of Unexpected Class **** \nReason: Expected class: \(testClass) but got: \(object) of class \(object.self)")
 }
@@ -132,7 +152,7 @@ public func RZASSERT_KINDOF(object:AnyObject, testClass:AnyClass) -> Void
 *  @param y     A class.
 */
 
-public func RZASSERT_KINDOF_OR_NIL(object:AnyObject?, testClass:AnyClass) -> Void
+public func RZAFFIRM_KINDOF_OR_NIL(object:AnyObject?, testClass:AnyClass) -> Void
 {
     if ( object != nil ) {
         assert((object!.isKindOfClass(testClass)), "**** Object of Unexpected Class and Not Nil **** \nReason: Expected class: \(testClass) or nil but got: \(object) of class \(object.self)")
@@ -142,19 +162,6 @@ public func RZASSERT_KINDOF_OR_NIL(object:AnyObject?, testClass:AnyClass) -> Voi
 }
 
 /**
-*  Raise an exception if object's class does not conform to protocol. Return void.
-*
-*  @param object        An object instance.
-*  @param protocol      A protocol of the form @protocol(foo).
-*/
-
-public func RZASSERT_CONFORMS_PROTOCOL(object:AnyObject?, testProtocol:Protocol) -> Void
-{
-    assert(object!.conformsToProtocol(testProtocol), "**** Object Unexpectedly Doesn't Conform to Protocol **** \nReason: Expected object: \(object) of class \(object.self) to conform to protocol \(testProtocol), but it does not.")
-}
-
-
-/**
 *  Raise an exception if object is not a subclass of testClass, or is not nil.
 *  Return void.
 *
@@ -162,7 +169,7 @@ public func RZASSERT_CONFORMS_PROTOCOL(object:AnyObject?, testProtocol:Protocol)
 *  @param parentClass     A class.
 */
 
-public func RZASSERT_CLASS_SUBCLASS_OF_CLASS(subclass:AnyClass, parentClass:AnyClass) -> Void
+public func RZAFFIRM_CLASS_SUBCLASS_OF_CLASS(subclass: AnyClass, parentClass: AnyClass) -> Void
 {
     assert(subclass.isSubclassOfClass(parentClass), "**** Bad Subclass Relationship **** \nReason: Expected class: \(subclass) to be a subclass of class: \(parentClass), but it is not.")
 }
@@ -174,11 +181,11 @@ public func RZASSERT_CLASS_SUBCLASS_OF_CLASS(subclass:AnyClass, parentClass:AnyC
 /**
 *  Raise an exception. Return void.
 *
-* Place RZASSERT_SUBCLASSES_MUST_OVERRIDE in a superclass method that would
+* Place RZAFFIRM_SUBCLASSES_MUST_OVERRIDE in a superclass method that would
 * otherwise be left empty
 */
 
-public func RZASSERT_SUBCLASSES_MUST_OVERRIDE(object:AnyObject!) -> Void
+public func RZAFFIRM_SUBCLASSES_MUST_OVERRIDE(object:AnyObject!) -> Void
 {
     assert(false, "**** Subclass Responsibility Assertion **** \nReason: Subclasses of \(object.self) MUST override this method: \(__FUNCTION__)\n")
 }
@@ -191,7 +198,7 @@ public func RZASSERT_SUBCLASSES_MUST_OVERRIDE(object:AnyObject!) -> Void
 *
 */
 
-public func RZASSERT_SHOULD_NEVER_GET_HERE(object:AnyObject) -> Void
+public func RZAFFIRM_SHOULD_NEVER_GET_HERE() -> Void
 {
     assert(false, "**** Assertion: Should Never Get Here **** \n__FUNCTION: \(__FUNCTION__) ")
 }
