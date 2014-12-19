@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CAA98641A44AEAC00779DDC /* RZAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAA98631A44AEAC00779DDC /* RZAppDelegate.swift */; };
+		1CAA98661A44AEAC00779DDC /* RZViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAA98651A44AEAC00779DDC /* RZViewController.swift */; };
+		1CAA98691A44AEAC00779DDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CAA98671A44AEAC00779DDC /* Main.storyboard */; };
+		1CAA986B1A44AEAC00779DDC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CAA986A1A44AEAC00779DDC /* Images.xcassets */; };
+		1CAA986E1A44AEAC00779DDC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CAA986C1A44AEAC00779DDC /* LaunchScreen.xib */; };
+		1CAA987A1A44AEAC00779DDC /* RZAffirmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAA98791A44AEAC00779DDC /* RZAffirmTests.swift */; };
+		1CAA98841A44B05E00779DDC /* RZAffirm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAA98831A44B05E00779DDC /* RZAffirm.swift */; };
+		1CAA98861A44B4C600779DDC /* RZViewControllerSubclass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAA98851A44B4C600779DDC /* RZViewControllerSubclass.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1CAA98741A44AEAC00779DDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CAA98561A44AEAC00779DDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CAA985D1A44AEAC00779DDC;
+			remoteInfo = RZAffirm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1CAA985E1A44AEAC00779DDC /* RZAffirm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RZAffirm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CAA98621A44AEAC00779DDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CAA98631A44AEAC00779DDC /* RZAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZAppDelegate.swift; sourceTree = "<group>"; };
+		1CAA98651A44AEAC00779DDC /* RZViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZViewController.swift; sourceTree = "<group>"; };
+		1CAA98681A44AEAC00779DDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1CAA986A1A44AEAC00779DDC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1CAA986D1A44AEAC00779DDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		1CAA98731A44AEAC00779DDC /* RZAffirmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RZAffirmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CAA98781A44AEAC00779DDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CAA98791A44AEAC00779DDC /* RZAffirmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZAffirmTests.swift; sourceTree = "<group>"; };
+		1CAA98831A44B05E00779DDC /* RZAffirm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RZAffirm.swift; sourceTree = "<group>"; };
+		1CAA98851A44B4C600779DDC /* RZViewControllerSubclass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RZViewControllerSubclass.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1CAA985B1A44AEAC00779DDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CAA98701A44AEAC00779DDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CAA98551A44AEAC00779DDC = {
+			isa = PBXGroup;
+			children = (
+				1CAA98601A44AEAC00779DDC /* RZAffirm */,
+				1CAA98761A44AEAC00779DDC /* RZAffirmTests */,
+				1CAA985F1A44AEAC00779DDC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1CAA985F1A44AEAC00779DDC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1CAA985E1A44AEAC00779DDC /* RZAffirm.app */,
+				1CAA98731A44AEAC00779DDC /* RZAffirmTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1CAA98601A44AEAC00779DDC /* RZAffirm */ = {
+			isa = PBXGroup;
+			children = (
+				1CAA98831A44B05E00779DDC /* RZAffirm.swift */,
+				1CAA98631A44AEAC00779DDC /* RZAppDelegate.swift */,
+				1CAA98651A44AEAC00779DDC /* RZViewController.swift */,
+				1CAA98851A44B4C600779DDC /* RZViewControllerSubclass.swift */,
+				1CAA98671A44AEAC00779DDC /* Main.storyboard */,
+				1CAA986A1A44AEAC00779DDC /* Images.xcassets */,
+				1CAA986C1A44AEAC00779DDC /* LaunchScreen.xib */,
+				1CAA98611A44AEAC00779DDC /* Supporting Files */,
+			);
+			path = RZAffirm;
+			sourceTree = "<group>";
+		};
+		1CAA98611A44AEAC00779DDC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1CAA98621A44AEAC00779DDC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1CAA98761A44AEAC00779DDC /* RZAffirmTests */ = {
+			isa = PBXGroup;
+			children = (
+				1CAA98791A44AEAC00779DDC /* RZAffirmTests.swift */,
+				1CAA98771A44AEAC00779DDC /* Supporting Files */,
+			);
+			path = RZAffirmTests;
+			sourceTree = "<group>";
+		};
+		1CAA98771A44AEAC00779DDC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1CAA98781A44AEAC00779DDC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1CAA985D1A44AEAC00779DDC /* RZAffirm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CAA987D1A44AEAC00779DDC /* Build configuration list for PBXNativeTarget "RZAffirm" */;
+			buildPhases = (
+				1CAA985A1A44AEAC00779DDC /* Sources */,
+				1CAA985B1A44AEAC00779DDC /* Frameworks */,
+				1CAA985C1A44AEAC00779DDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RZAffirm;
+			productName = RZAffirm;
+			productReference = 1CAA985E1A44AEAC00779DDC /* RZAffirm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1CAA98721A44AEAC00779DDC /* RZAffirmTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CAA98801A44AEAC00779DDC /* Build configuration list for PBXNativeTarget "RZAffirmTests" */;
+			buildPhases = (
+				1CAA986F1A44AEAC00779DDC /* Sources */,
+				1CAA98701A44AEAC00779DDC /* Frameworks */,
+				1CAA98711A44AEAC00779DDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CAA98751A44AEAC00779DDC /* PBXTargetDependency */,
+			);
+			name = RZAffirmTests;
+			productName = RZAffirmTests;
+			productReference = 1CAA98731A44AEAC00779DDC /* RZAffirmTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1CAA98561A44AEAC00779DDC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Raizlabs;
+				TargetAttributes = {
+					1CAA985D1A44AEAC00779DDC = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					1CAA98721A44AEAC00779DDC = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 1CAA985D1A44AEAC00779DDC;
+					};
+				};
+			};
+			buildConfigurationList = 1CAA98591A44AEAC00779DDC /* Build configuration list for PBXProject "RZAffirm" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1CAA98551A44AEAC00779DDC;
+			productRefGroup = 1CAA985F1A44AEAC00779DDC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1CAA985D1A44AEAC00779DDC /* RZAffirm */,
+				1CAA98721A44AEAC00779DDC /* RZAffirmTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1CAA985C1A44AEAC00779DDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CAA98691A44AEAC00779DDC /* Main.storyboard in Resources */,
+				1CAA986E1A44AEAC00779DDC /* LaunchScreen.xib in Resources */,
+				1CAA986B1A44AEAC00779DDC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CAA98711A44AEAC00779DDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CAA985A1A44AEAC00779DDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CAA98861A44B4C600779DDC /* RZViewControllerSubclass.swift in Sources */,
+				1CAA98841A44B05E00779DDC /* RZAffirm.swift in Sources */,
+				1CAA98661A44AEAC00779DDC /* RZViewController.swift in Sources */,
+				1CAA98641A44AEAC00779DDC /* RZAppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CAA986F1A44AEAC00779DDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CAA987A1A44AEAC00779DDC /* RZAffirmTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1CAA98751A44AEAC00779DDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CAA985D1A44AEAC00779DDC /* RZAffirm */;
+			targetProxy = 1CAA98741A44AEAC00779DDC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1CAA98671A44AEAC00779DDC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CAA98681A44AEAC00779DDC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1CAA986C1A44AEAC00779DDC /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CAA986D1A44AEAC00779DDC /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1CAA987B1A44AEAC00779DDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1CAA987C1A44AEAC00779DDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1CAA987E1A44AEAC00779DDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RZAffirm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1CAA987F1A44AEAC00779DDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RZAffirm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1CAA98811A44AEAC00779DDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RZAffirmTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RZAffirm.app/RZAffirm";
+			};
+			name = Debug;
+		};
+		1CAA98821A44AEAC00779DDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RZAffirmTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RZAffirm.app/RZAffirm";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CAA98591A44AEAC00779DDC /* Build configuration list for PBXProject "RZAffirm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CAA987B1A44AEAC00779DDC /* Debug */,
+				1CAA987C1A44AEAC00779DDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CAA987D1A44AEAC00779DDC /* Build configuration list for PBXNativeTarget "RZAffirm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CAA987E1A44AEAC00779DDC /* Debug */,
+				1CAA987F1A44AEAC00779DDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CAA98801A44AEAC00779DDC /* Build configuration list for PBXNativeTarget "RZAffirmTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CAA98811A44AEAC00779DDC /* Debug */,
+				1CAA98821A44AEAC00779DDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1CAA98561A44AEAC00779DDC /* Project object */;
+}

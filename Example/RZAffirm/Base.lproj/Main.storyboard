@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="RZViewController" customModule="RZAffirm" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xW5-Lh-MpI">
+                                <rect key="frame" x="250" y="40" width="99" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="RZAFFIRM_TRUE">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="throwRZAffirmTrue:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5XK-Jg-kNh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbW-GA-QEk">
+                                <rect key="frame" x="247" y="97" width="104" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="RZAFFIRM_FALSE">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="throwRZAffirmFalse:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="IWk-pd-xML"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LoO-lg-Ypq">
+                                <rect key="frame" x="257" y="158" width="86" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="RZAFFIRM_NIL">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="throwRZAffirmNil:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fSb-nV-JdR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="be7-gD-CXD">
+                                <rect key="frame" x="240" y="216" width="118" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="RZAFFIRM_NOT_NIL">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="throwRZAffirmNotNil:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uYy-YF-pJP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ADr-8U-UAv">
+                                <rect key="frame" x="206" y="273" width="187" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="RZAFFIRM_NONEMPTY_STRING">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="throwRZAffirmNonEmptyString:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="e1t-f0-6Rh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdW-i7-WHf">
+                                <rect key="frame" x="171" y="334" width="256" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="RZAFFIRM_SUBCLASSES_MUST_OVERRIDE">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="throwRZAffirmNonSubclassesMustOverride:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7bn-h1-7UP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yFq-Ez-ysC">
+                                <rect key="frame" x="183" y="391" width="233" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="RZAFFIRM_SHOULD_NEVER_GET_HERE">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="throwRZAffirmShouldNeverGetHere:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1fk-3I-9nn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yFq-Ez-ysC" firstAttribute="top" secondItem="bdW-i7-WHf" secondAttribute="bottom" constant="30" id="EEM-VD-w9S"/>
+                            <constraint firstAttribute="centerX" secondItem="be7-gD-CXD" secondAttribute="centerX" constant="1" id="FRD-72-0Iv"/>
+                            <constraint firstAttribute="centerX" secondItem="LoO-lg-Ypq" secondAttribute="centerX" id="HrK-aF-6Bg"/>
+                            <constraint firstItem="ADr-8U-UAv" firstAttribute="top" secondItem="be7-gD-CXD" secondAttribute="bottom" constant="30" id="LeE-S2-xPE"/>
+                            <constraint firstAttribute="centerX" secondItem="yFq-Ez-ysC" secondAttribute="centerX" id="QUl-7J-EXV"/>
+                            <constraint firstAttribute="centerX" secondItem="ADr-8U-UAv" secondAttribute="centerX" id="TkD-qL-a4u"/>
+                            <constraint firstItem="xW5-Lh-MpI" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="W6D-V8-KyH"/>
+                            <constraint firstItem="bbW-GA-QEk" firstAttribute="top" secondItem="xW5-Lh-MpI" secondAttribute="bottom" constant="30" id="afV-3J-lwz"/>
+                            <constraint firstItem="bdW-i7-WHf" firstAttribute="top" secondItem="ADr-8U-UAv" secondAttribute="bottom" constant="34" id="bOS-DE-cxu"/>
+                            <constraint firstAttribute="centerX" secondItem="xW5-Lh-MpI" secondAttribute="centerX" id="c43-Wg-Fau"/>
+                            <constraint firstItem="be7-gD-CXD" firstAttribute="top" secondItem="LoO-lg-Ypq" secondAttribute="bottom" constant="31" id="dlg-tB-8nr"/>
+                            <constraint firstAttribute="centerX" secondItem="bbW-GA-QEk" secondAttribute="centerX" constant="1" id="hfK-gH-cRg"/>
+                            <constraint firstAttribute="centerX" secondItem="bdW-i7-WHf" secondAttribute="centerX" constant="1" id="rJA-5w-zj1"/>
+                            <constraint firstItem="LoO-lg-Ypq" firstAttribute="top" secondItem="bbW-GA-QEk" secondAttribute="bottom" constant="34" id="xdN-F9-HNR"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
