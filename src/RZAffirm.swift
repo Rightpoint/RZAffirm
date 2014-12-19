@@ -102,8 +102,8 @@ public func RZAFFIRM_EQUAL_STRINGS(firstString: String, secondString:String, fil
 *  @param string An NSString instance.
 */
 
-public func RZAFFIRM_NONEMPTY_STRING(string: String?, file: StaticString = __FILE__, line: UWord = __LINE__) -> Void {
-    assert((string != nil), "**** Unexpected Nil, Wrong Class, or Empty String **** \nReason: Expected non-empty string but got: \(string)", file: file, line: line)
+public func RZAFFIRM_NONEMPTY_STRING(string: String, file: StaticString = __FILE__, line: UWord = __LINE__) -> Void {
+    assert(!string.isEmpty, "**** Unexpected Nil, Wrong Class, or Empty String **** \nReason: Expected non-empty string but got: \(string)", file: file, line: line)
 }
 
 
