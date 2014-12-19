@@ -3,7 +3,7 @@
 //  RZAffirm.swift
 //
 //  Created by Matthew Buckley on 12/13/14.
-//  Copyright (c) 2014 MattBuckley. All rights reserved.
+//  Copyright (c) 2014 Raizlabs. All rights reserved.
 //  http://raizlabs.com/
 //
 //  Permission is hereby granted, free of charge, to any person obtaining
