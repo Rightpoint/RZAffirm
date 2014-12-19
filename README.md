@@ -13,7 +13,7 @@ You define a method on a class, but you want that method to ONLY be called by su
 class RZSuperclass
 
 func aMethodThatShouldBeCalledFromSubclassesOnly -> Void {
-	RZAFFIRM_SUBCLASSES_MUST_OVERRIDE;
+  RZAFFIRM_SUBCLASSES_MUST_OVERRIDE;
 }
 ```
 
@@ -39,7 +39,7 @@ You define a method which takes a class instance as one of its arguments, and yo
 
 ```
 func configureThingsForDictionary(awesomeViewController:RZAwesomeViewController) -> Void {
-	RZAFFIRM_CONFORMS_PROTOCOL(self, protocol(RZAwesomeDelegate))
+  RZAFFIRM_CONFORMS_PROTOCOL(self, protocol(RZAwesomeDelegate))
 }
 ```
 
@@ -51,10 +51,12 @@ A demo project is available in the `Example` directory. Open RZAffirm.xcodeproj 
 
 CocoaPods does not currently support swift libraries. For this reason, `RZAFFIRM` must be installed manually. Simply copy/add the contents of Classes/ into your project to get started.
 
-## Author
+## Authors
 
 Michael Gorbach, michael.gorbach@raizlabs.com
+
 Joe Howard, joe.howard@raizlabs.com
+
 Matt Buckley, matt.buckley@raizlabs.com
 
 ## License
