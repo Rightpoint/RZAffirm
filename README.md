@@ -9,34 +9,39 @@ RZAffirm
 
 You define a method on a class, but you want that method to ONLY be called by subclasses. Use `RZAFFIRM_SUBCLASSES_MUST_OVERRIDE` to throw an exception if the method is called from the class itself:
 
-	class RZSuperclass
-	
-	func aMethodThatShouldBeCalledFromSubclassesOnly -> Void {
-		RZAFFIRM_SUBCLASSES_MUST_OVERRIDE;
-	}
+```
+class RZSuperclass
+
+func aMethodThatShouldBeCalledFromSubclassesOnly -> Void {
+	RZAFFIRM_SUBCLASSES_MUST_OVERRIDE;
+}
+```
 
 You define a switch statement with a case that should never occur. Use `RZAFFIRM_SHOULD_NEVER_GET_HERE` to throw an exception if your program passes the undesired case to the switch statement:
+```
+enum AwesomeMode {
+    case AwesomeModeNotSet
+    case AwesomeModeIsAwesome
+}
 
-  enum AwesomeMode {
-      case AwesomeModeNotSet
-      case AwesomeModeIsAwesome
-  }
-
-  func configureThingsForAwesomeMode(awesomeMode:AwesomeMode) -> Void {
-      switch awesomeMode {
-          case .AwesomeModeNotSet:
-              RZAFFIRM_SHOULD_NEVER_GET_HERE(self)
-              break
-          case .AwesomeModeIsAwesome:
-              break
-      }
-  }
+func configureThingsForAwesomeMode(awesomeMode:AwesomeMode) -> Void {
+    switch awesomeMode {
+        case .AwesomeModeNotSet:
+            RZAFFIRM_SHOULD_NEVER_GET_HERE(self)
+            break
+        case .AwesomeModeIsAwesome:
+            break
+    }
+}
+```
 
 You define a method which takes a class instance as one of its arguments, and you want to confirm that the instance conforms to a specific protocol. You use `RZAFFIRM_CONFORMS_PROTOCOL` to throw an exception if the program passes a nonconformant instance to the method:
 
-  func configureThingsForDictionary(awesomeViewController:RZAwesomeViewController) -> Void {
-  	RZAFFIRM_CONFORMS_PROTOCOL(self, protocol(RZAwesomeDelegate))
-  }
+```
+func configureThingsForDictionary(awesomeViewController:RZAwesomeViewController) -> Void {
+	RZAFFIRM_CONFORMS_PROTOCOL(self, protocol(RZAwesomeDelegate))
+}
+```
 
 ## Usage
 
