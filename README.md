@@ -2,6 +2,9 @@ RZAffirm
 ============
 
 [![Build Status](https://travis-ci.org/Raizlabs/RZAffirm.svg)](https://travis-ci.org/Raizlabs/RZAffirm)
+[![Version](https://img.shields.io/cocoapods/v/RZAffirm.svg?style=flat)](http://cocoadocs.org/docsets/RZAffirm)
+[![License](https://img.shields.io/cocoapods/l/RZAffirm.svg?style=flat)](http://cocoadocs.org/docsets/RZAffirm)
+[![Platform](https://img.shields.io/cocoapods/p/RZAffirm.svg?style=flat)](http://cocoadocs.org/docsets/RZAffirm)
 
 `RZAffirm` adds ease of implementation and clarity of intent to your assertions. `RZAffirm` defines functions which - like comments - express intent, but never go out of date. `RRZAFFIRM_TRUE`, `RZAFFIRM_FALSE`, `RZAFFIRM_NOT_NIL`, and `RZAFFIRM_NONEMPTY_STRING` all do exactly what you think they do.
 
@@ -42,7 +45,17 @@ A demo project is available in the `Example` directory. Open RZAffirm.xcodeproj 
 
 ## Installation
 
-CocoaPods does not currently support swift libraries. For this reason, `RZAffirm` must be installed manually. Simply copy/add the `RZAffirm.swft` file of src/ into your project to get started.
+'RZAffirm' is now available through the dependency manager [CocoaPods](http://cocoapods.org). CocoaPods version 0.36.0 is required. At this moment this can be installed as a pre release by executing:
+
+    `[sudo] gem install cocoapods --pre`
+
+To install RZAffirm with CocoaPods 0.36.0, simply add the following line to your Podfile:
+
+    pod RZAffirm, '~> 0.1'
+
+Import RZAffirm at the top of your swift file by adding this code:
+
+    `import RZAffirm`
 
 ## Authors
 
