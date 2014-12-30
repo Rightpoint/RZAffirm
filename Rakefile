@@ -15,7 +15,7 @@ end
 #
 
 task :analyze do
-  sh("xcodebuild -workspace '#{PROJ_PATH}' -scheme '#{TEST_SCHEME}' -sdk iphonesimulator analyze") rescue nil
+  sh("xcodebuild -project '#{PROJ_PATH}' -scheme '#{TEST_SCHEME}' -sdk iphonesimulator analyze") rescue nil
   exit $?.exitstatus
 end
 
