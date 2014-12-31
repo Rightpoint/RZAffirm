@@ -10,7 +10,7 @@ namespace :install do
   task :tools do
     # don't care if this fails on travis
     sh("brew update") rescue nil
-    sh("gem install cocoapods --no-rdoc --no-ri --no-document --quiet") rescue nil
+    sh("gem install cocoapods --pre --no-rdoc --no-ri --no-document --quiet") rescue nil
   end
 
   task :pods do
