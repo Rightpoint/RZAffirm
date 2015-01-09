@@ -1,7 +1,7 @@
 language: swift
 before_install: 
     - export LANG=en_US.UTF-8
-    - source ~/.rvm/scripts/rvm && rvm use 2.0.0-p353
+    - source ~/.rvm/scripts/rvm && rvm install ruby-2.0.0-p353 && rvm use 2.0.0-p353
     - brew install cmake
 script: 
     - rake clean:example
