@@ -1,7 +1,8 @@
-language: swift
+language: objective-c
 before_install: 
     - export LANG=en_US.UTF-8
     - source ~/.rvm/scripts/rvm && rvm install ruby-2.0.0-p353 && rvm use 2.0.0-p353
+    - rake install
 script: 
     - rake clean:example
     - rake test
