@@ -12,6 +12,7 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://twitter.com/raizlabs'
 
   s.platform     = :ios, '8.0'
+  s.requires_arc = false
 
   s.source_files = 'src'
 end
