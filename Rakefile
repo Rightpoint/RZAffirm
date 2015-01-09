@@ -2,6 +2,29 @@ PROJ_PATH="Example/RZAffirm.xcodeproj"
 TEST_SCHEME="RZAffirmTests"
 
 #
+# Install
+#
+
+namespace :install do
+  
+  task :tools do
+    # don't care if this fails on travis
+    sh("brew update") rescue nil
+    sh("gem install cocoapods --pre --no-rdoc --no-ri --no-document --quiet") rescue nil
+  end
+
+  task :pods do
+    sh("cd Example && pod update && pod install && cd ../")
+  end
+  
+end
+
+task :install do
+  Rake::Task['install:tools'].invoke
+  Rake::Task['install:pods'].invoke
+end
+
+#
 # Test
 #
 
@@ -15,7 +38,7 @@ end
 #
 
 task :analyze do
-  sh("xcodebuild -workspace '#{PROJ_PATH}' -scheme '#{TEST_SCHEME}' -sdk iphonesimulator analyze") rescue nil
+  sh("xcodebuild -project '#{PROJ_PATH}' -scheme '#{TEST_SCHEME}' -sdk iphonesimulator analyze") rescue nil
   exit $?.exitstatus
 end
 

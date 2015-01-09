@@ -1,0 +1,9 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'RZAffirm', :exclusive => true do
+  pod "RZAffirm", :path => "../"
+end
+
+target 'RZAffirmTests', :exclusive => true do
+  pod "RZAffirm", :path => "../"
+end
