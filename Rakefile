@@ -1,4 +1,5 @@
 PROJ_PATH="Example/RZAffirm.xcodeproj"
+WORKSPACE_PATH="Example/RZAffirm.xcworkspace"
 TEST_SCHEME="RZAffirmTests"
 
 #
@@ -29,7 +30,7 @@ end
 #
 
 task :test do
-  sh("xcodebuild -project '#{PROJ_PATH}' -scheme '#{TEST_SCHEME}' -sdk iphonesimulator -destination 'name=iPhone 6' build test") rescue nil
+  sh("xcodebuild -workspace '#{WORKSPACE_PATH}' -scheme '#{TEST_SCHEME}' -sdk iphonesimulator -destination 'name=iPhone 6' build test") rescue nil
   exit $?.exitstatus
 end
 
@@ -38,7 +39,7 @@ end
 #
 
 task :analyze do
-  sh("xcodebuild -project '#{PROJ_PATH}' -scheme '#{TEST_SCHEME}' -sdk iphonesimulator analyze") rescue nil
+  sh("xcodebuild -workspace '#{WORKSPACE_PATH}' -scheme '#{TEST_SCHEME}' -sdk iphonesimulator analyze") rescue nil
   exit $?.exitstatus
 end
 
@@ -47,6 +48,12 @@ end
 #
 
 namespace :clean do
+  
+  task :pods do
+    sh("rm -f Example/Podfile.lock")
+    sh "rm -rf Example/Pods"
+    sh("rm -rf Example/*.xcworkspace")
+  end
   
   task :example do
     sh("xcodebuild -project '#{PROJ_PATH}' -scheme '#{TEST_SCHEME}' -sdk iphonesimulator clean") rescue nil
@@ -65,6 +72,9 @@ end
 
 task :usage do
   puts "Usage:"
+  puts "  rake install       -- install all dependencies (cocoapods)"
+  puts "  rake install:pods  -- install cocoapods for tests/example"
+  puts "  rake install:tools -- install build tool dependencies"
   puts "  rake test          -- run unit tests"
   puts "  rake clean         -- clean everything"
   puts "  rake clean:example -- clean the example project build artifacts"
@@ -76,3 +86,13 @@ end
 #
 
 task :default => 'usage'
+
+#
+# Private
+#
+
+private
+
+def sync_project(path, flags)
+  sh("synx #{flags} '#{path}'")
+end

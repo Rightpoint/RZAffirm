@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  RZAffirm: fc326f3b7a844a9d67a84a07d65b6a44eff44473
+  RZAffirm: 06c7dc10aab83c308e36f7d8e52f2e490d7d18f5
 
 COCOAPODS: 0.36.0.beta.1
