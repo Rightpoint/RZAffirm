@@ -66,7 +66,7 @@ public func RZAFFIRM_ALWAYS(file: StaticString = __FILE__, line: UWord = __LINE_
 *  @param object     An object instance to compare with 0.
 */
 
-public func RZAFFIRM_TRUE(condition: @autoclosure () -> Bool, file: StaticString = __FILE__, line: UWord = __LINE__) -> Void {
+public func RZAFFIRM_TRUE(@autoclosure condition:  () -> Bool, file: StaticString = __FILE__, line: UWord = __LINE__) -> Void {
     assert((condition() == true), "**** Unexpected Assertion ****", file: file, line: line)
 }
 
@@ -77,7 +77,7 @@ public func RZAFFIRM_TRUE(condition: @autoclosure () -> Bool, file: StaticString
 *  @param object     An object instance to compare with 1.
 */
 
-public func RZAFFIRM_FALSE(condition: @autoclosure () -> Bool, file: StaticString = __FILE__, line: UWord = __LINE__) -> Void {
+public func RZAFFIRM_FALSE(@autoclosure condition:  () -> Bool, file: StaticString = __FILE__, line: UWord = __LINE__) -> Void {
     assert((condition() == false), "**** Unexpected Assertion ****", file: file, line: line)
 }
 
